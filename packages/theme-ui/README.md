@@ -4,7 +4,53 @@
   height="96"
 />
 
-# Theme UI
+# Theme UI - à la The Puzzlers
+
+This repo was created to hold a few customizations for The Puzzlers.
+At the moment this only regards the theme-ui/css package. We needed a different way to handle the breakpoint definition.
+
+Everything is the same as the original theme-ui by system-ui.
+
+### Initial setup
+
+```
+# clone repo
+$ git clone git@github.com:carolinmaisenbacher/theme-ui.git
+```
+
+### Keep the repo up to date with original theme-ui
+
+1. Add remote "upstream"
+
+```
+# check remotes of repository.
+$ git remote -v
+# if not created already, add remote "upstream" pointing to original theme-ui
+$ git remote add upstream git@github.com:system-ui/theme-ui.git
+
+# check if added correctly, should look like this:
+$ git remote -v
+origin	git@github.com:carolinmaisenbacher/theme-ui.git (fetch)
+origin	git@github.com:carolinmaisenbacher/theme-ui.git (push)
+upstream	git@github.com:system-ui/theme-ui.git (fetch)
+upstream	git@github.com:system-ui/theme-ui.git (push)
+```
+
+2.  Fetch upstream
+
+```
+$ git fetch upstream
+```
+
+3. Merge upstream master with local master
+
+```
+$ git checkout master
+$ git merge upstream/msater master
+$ git push origin master
+```
+
+This will bring your local repo up to date with original theme-ui, without losing our changes.
 
 **The Design Graph Framework**
 
@@ -72,7 +118,7 @@ import React from 'react'
 import { ThemeProvider } from 'theme-ui'
 import theme from './theme'
 
-export default props => (
+export default (props) => (
   <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
 )
 ```
@@ -111,7 +157,7 @@ This means you can control which modules in your application opt into this featu
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
 
-export default props => (
+export default (props) => (
   <div
     sx={{
       fontWeight: 'bold',
@@ -134,7 +180,7 @@ This API originated in [Styled System][] and is intended as [a terser syntax for
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
 
-export default props => (
+export default (props) => (
   <div
     sx={{
       // applies width 100% to all viewport widths,
