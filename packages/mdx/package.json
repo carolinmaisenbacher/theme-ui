@@ -1,6 +1,6 @@
 {
   "name": "@theme-ui/mdx",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -17,8 +17,8 @@
     "@mdx-js/react": "^1.0.0"
   },
   "devDependencies": {
-    "@theme-ui/core": "^1.1.0",
-    "@theme-ui/css": "^1.1.0"
+    "@theme-ui/core": "^1.2.0",
+    "@theme-ui/css": "^1.2.0"
   },
   "peerDependencies": {
     "react": "^16.11.0"
