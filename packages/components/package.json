@@ -25,5 +25,6 @@
     "access": "public"
   },
   "author": "Brent Jackson <jxnblk@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "6e5fa2f71e4a9f5717bb8bd73aab465e59d82e78"
 }

@@ -32,7 +32,7 @@
     "css-in-js",
     "style"
   ],
-  "gitHead": "5681b24d36f81fddd0d1d82cbb85136cc15dcd4c",
+  "gitHead": "6e5fa2f71e4a9f5717bb8bd73aab465e59d82e78",
   "devDependencies": {
     "lodash.kebabcase": "^4.1.1",
     "postcss": "^7.0.17",

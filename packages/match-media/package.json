@@ -26,5 +26,6 @@
     "@theme-ui/core": "^0.4.0-alpha.0",
     "@theme-ui/css": "^0.4.0-alpha.0",
     "react": "^16.9.0"
-  }
+  },
+  "gitHead": "6e5fa2f71e4a9f5717bb8bd73aab465e59d82e78"
 }
