@@ -230,7 +230,9 @@ const responsive = (
     (theme && (theme.breakpoints as string[])) || defaultBreakpoints
   const mediaQueries = [
     null,
-    ...breakpoints.map((n) => `@media screen and (min-width: ${n})`),
+    ...breakpoints.map((n) =>
+      n.length >= 10 ? n : `@media screen and (min-width: ${n})`
+    ),
   ]
 
   for (const k in styles) {
